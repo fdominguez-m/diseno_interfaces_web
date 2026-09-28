@@ -2,47 +2,43 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supermercado DWEC</title>
-    <link rel="stylesheet" href="style.css"></head>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a>Noticias</a></li>
-                <li><a>Ofertas</a></li>
-                <li><a>Productos</a></li>
-                <li>
-                    <form action="/buscar" method="get">
-                        <input type="search" id="buscar" name="q">
-                        <button type="submit">Buscar</button>
-                    </form>
-                </li>
-                <li><a>Iniciar sesión</a></li>
-            </ul>
-
+            <a href="#">Noticias</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Productos</a>
+            <form action="/buscar" method="get">
+                <input type="search" id="buscar" name="q">
+                <button type="submit">Buscar</button>
+            </form>
+            <a href="#">Iniciar sesión</a>
         </nav>
     </header>
 
     <main>
         <section>
-            <h1>Noticias</h1>
+            <h1><a href="#">Noticias</a></h1>
             <article>
-                <p><a href="./black_friday.html">Black Friday</a></p>
+                <a href="./black_friday.html">Black Friday</a>
             </article>
             <article>
-                <p><a href="./nuevos_productos.html">Nuevos productos</a></p>
+                <a href="./nuevos_productos.html">Nuevos productos</a>
             </article>
             <article>
-                <p>Socio número 1000</p>
+                <a href="#">Socio número 1000</a>
             </article>
             <article>
-                <p>Fin del verano</p>
+                <a href="#">Fin del verano</a>
             </article>
         </section>
         <section>
-            <h1>Ofertas</h1>
+            <h1><a href="#">Ofertas</a></h1>
             <div>Patatas</div>
             <div>Ensalada precocinada</div>
             <div>Yogures</div>
@@ -58,8 +54,8 @@
 
     <footer>
         <p>Copyright</p>
-        <p>Contacto</p>
-        <p>Dirección</p>
+        <a href="#">Contacto</a>
+        <a href="#">Dirección</a>
     </footer>
 </body>
 </html>

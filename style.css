@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(208, 208, 245);
+    margin: 0;
+        /*Por defecto, body tiene 8*/
+        min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: oklch(1 1 1);
+    padding: 20px;
+    /*margin: separación de la caja respecto a otras cajas.
+    padding: separación de los elementos de la caja respecto a esta.
+    */
+}
+
+main {
+    flex: 1;
+        /**/
+}
+
+h1 {
+    background-clip: text;
+    color: transparent;
+}
+
+footer{
+    background-color: rgb(144, 234, 111);
+        /*No hacía falta, pero ya que estaba.*/
+    padding: 20px;
+}
