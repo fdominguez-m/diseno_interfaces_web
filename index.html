@@ -5,51 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supermercado DWEC</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
 </head>
 
 <body>
     <header>
         <nav>
+            <a href="index.html"><span class="material-symbols-outlined">home</span></a>
             <a href="#">Noticias</a>
             <a href="#">Ofertas</a>
             <a href="#">Productos</a>
             <form action="/buscar" method="get">
                 <input type="search" id="buscar" name="q">
-                <button type="submit">Buscar</button>
+                <span class="material-symbols-outlined">search</span>
             </form>
             <a href="#">Iniciar sesión</a>
+            <span class="material-symbols-outlined">shopping_cart_checkout</span>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h1><a href="#">Noticias</a></h1>
-            <article>
-                <a href="./black_friday.html">Black Friday</a>
-            </article>
-            <article>
-                <a href="./nuevos_productos.html">Nuevos productos</a>
-            </article>
-            <article>
-                <a href="#">Socio número 1000</a>
-            </article>
-            <article>
-                <a href="#">Fin del verano</a>
-            </article>
-        </section>
-        <section>
-            <h1><a href="#">Ofertas</a></h1>
-            <div>Patatas</div>
-            <div>Ensalada precocinada</div>
-            <div>Yogures</div>
-        </section>
-        <section>
-            <h1>Productos</h1>
-            <div>Piña</div>
-            <div>Naranja</div>
-            <div>Leche</div>
-            <div>Pan</div>
-        </section>
+        <h1>Supermercado DWEC</h1>
+        <div class="secciones">
+            <section>
+                <h2><a href="#">Noticias</a></h2>
+                <article>
+                    <a href="./black_friday.html">Black Friday</a>
+                </article>
+                <article>
+                    <a href="./nuevos_productos.html">Nuevos productos</a>
+                </article>
+                <article>
+                    <a href="#">Socio número 1000</a>
+                </article>
+                <article>
+                    <a href="#">Fin del verano</a>
+                </article>
+            </section>
+            <section>
+                <h2><a href="#">Ofertas</a></h2>
+                <div>Patatas</div>
+                <div>Ensalada precocinada</div>
+                <div>Yogures</div>
+            </section>
+            <section>
+                <h2><a href="#">Productos</a></h2>
+                <div>Piña</div>
+                <div>Naranja</div>
+                <div>Leche</div>
+                <div>Pan</div>
+            </section>
+        </div>
     </main>
 
     <footer>

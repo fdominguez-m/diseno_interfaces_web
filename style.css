@@ -1,10 +1,18 @@
-body {
-    background-color: rgb(208, 208, 245);
+/* RESETEO */
+* {
     margin: 0;
         /*Por defecto, body tiene 8*/
-        min-height: 100vh;
+}
+
+/* CÓDIGO */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap');
+
+body {
+    background-color: rgb(208, 208, 245);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 header {
@@ -13,20 +21,61 @@ header {
     /*margin: separación de la caja respecto a otras cajas.
     padding: separación de los elementos de la caja respecto a esta.
     */
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        /*Alinea los elementos en un eje X*/
+    gap: 30px;
+}
+
+form {
+    display: flex;
+    align-items: center;
 }
 
 main {
+    padding: 20px;
     flex: 1;
-        /**/
+        /*Esto permite que el main ocupe más espacio para que el footer y el header se queden en su sitio.*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
+    font-size: 100px;
+    background: linear-gradient(
+        to right,
+        red,
+        orange,
+        yellow,
+        blue,
+        violet
+    ); 
     background-clip: text;
+    -webkit-background-clip: text;
+
     color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    font-family: 'Fira Code', monospace;
+}
+
+.secciones{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 footer{
     background-color: rgb(144, 234, 111);
         /*No hacía falta, pero ya que estaba.*/
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
