@@ -5,10 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Black Friday</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
 </head>
+
 <body>
+    <header>
+        <nav>
+            <a href="index.html"><span class="material-symbols-outlined">home</span></a>
+            <a href="#">Noticias</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Productos</a>
+            <form action="/buscar" method="get">
+                <input type="search" id="buscar" name="q">
+                <span class="material-symbols-outlined">search</span>
+            </form>
+            <a href="#">Iniciar sesión</a>
+            <span class="material-symbols-outlined">shopping_cart_checkout</span>
+            <button id="theme-toggle">Cambiar tema</button>
+        </nav>
+    </header>
+
     <main>
-        <div>
+        <div id="mi_tabla">
             <table>
                 <thead>
                     <tr>
@@ -41,5 +59,20 @@
             </table>
         </div>
     </main>
+    <footer>
+
+        <p>Copyright</p>
+        <a href="#">Contacto</a>
+        <a href="#">Dirección</a>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+
+        toggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        });
+    </script>
+
 </body>
 </html>

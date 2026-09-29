@@ -21,6 +21,7 @@
             </form>
             <a href="#">Iniciar sesión</a>
             <span class="material-symbols-outlined">shopping_cart_checkout</span>
+            <button id="theme-toggle">Cambiar tema</button>
         </nav>
     </header>
 
@@ -63,5 +64,13 @@
         <a href="#">Contacto</a>
         <a href="#">Dirección</a>
     </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+
+        toggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        });
+    </script>
 </body>
 </html>
