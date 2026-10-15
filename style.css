@@ -11,7 +11,7 @@
 
     /* Estilos por defecto (Modo Claro) */
 :root {
-    --bg-color: rgb(208, 208, 245);  /* Tu color claro original */
+    --bg-color: rgba(208, 208, 245, 0.157);  /* Tu color claro original */
     --text-color: #222222;
     --button-bg: #222222;
     --button-text: #ffffff;
@@ -25,7 +25,7 @@ body.dark-mode {
     --text-color: #e0e0e0;
     --button-bg: #ffffff;
     --button-text: #1a1a2e;
-    --header-bg: #2d2d44;
+    --header-bg: #2d2d445e;
     --footer-bg: #2d5a2d;
 }
 
