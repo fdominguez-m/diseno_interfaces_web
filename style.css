@@ -11,14 +11,28 @@
 
     /* Estilos por defecto (Modo Claro) */
 :root {
-    --bg-color: rgba(208, 208, 245, 0.157);  /* Tu color claro original */
+    /*--bg-color: rgba(208, 208, 245, 0.157);  Tu color claro original */
+    --bg-color: #d4d700ff;
     --text-color: #222222;
     --button-bg: #222222;
     --button-text: #ffffff;
-    --header-bg: oklch(1 1 1);
-    --footer-bg: rgb(144, 234, 111);
+    --header-bg: #eeef20ff;
+    /*--header-bg: oklch(1 1 1);*/
+    /*--footer-bg: rgb(144, 234, 111);*/
+    --footer-bg: #dddf00ff;
 }
-
+/*
+--jungle-teal: #007f5fff;
+--sea-green: #2b9348ff;
+--bright-fern: #55a630ff;
+--lime-moss: #80b918ff;
+--yellow-green: #aacc00ff;
+--lemon-lime: #bfd200ff;
+--lemon-lime-2: #d4d700ff;
+--lemon-lime-3: #dddf00ff;
+--yellow: #eeef20ff;
+--yellow-2: #ffff3fff;
+*/
 /* Estilos cuando se activa la clase .dark-mode */
 body.dark-mode {
     --bg-color: #1a1a2e;
@@ -45,7 +59,8 @@ header {
     /*margin: separación de la caja respecto a otras cajas.
     padding: separación de los elementos de la caja respecto a esta.
     */
-
+    position: sticky;
+    top: 0px;
 }
 
 nav {
@@ -54,6 +69,12 @@ nav {
     align-items: center;
         /*Alinea los elementos en un eje X*/
     gap: 30px;
+}
+a:hover{
+    color: beige;
+}
+a:visited{
+    color: black;
 }
 
 button {
@@ -125,11 +146,58 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
+tbody tr:first-child {
+    background-color: yellow;
+}
+tbody tr:last-child {
+    background-color: rgba(218, 112, 214, 0.531);
+}
+/* Aviso, dado que thead también tiene tr parece que hay que usar tbody para que solo cambie un tr */
 
-footer{
+.cambio_linea::first-line
+{
+    color: red;
+}
+.cambio_linea::first-letter {
+    background-color: black;
+}
+
+#noticias_destacadas {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.tarjeta:hover {
+    z-index: 3;
+}
+#franja {
+position: absolute;
+    z-index: 2;
+    top: 210px;
+    width: 80%;
+    height: 100px;
+    background-color: lightblue;
+}
+
+footer {
     background-color: var(--footer-bg);
     padding: 20px;
     display: flex;
     justify-content: center;
     gap: 30px;
+    position: sticky;
+    bottom: 0px;
 }
