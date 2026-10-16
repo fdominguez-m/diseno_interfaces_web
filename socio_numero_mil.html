@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado DWEC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><span class="material-symbols-outlined">home</span></a>
+            <a href="noticias.html">Noticias</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Productos</a>
+            <form id="busqueda_nav" action="/buscar" method="get">
+                <input type="search" id="busqueda_nav_input" name="q">
+                <span class="material-symbols-outlined">search</span>
+            </form>
+            <a href="#">Iniciar sesión</a>
+            <span class="material-symbols-outlined">shopping_cart_checkout</span>
+            <button id="theme-toggle">Cambiar tema</button>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Socio número mil</h2>
+
+        <p>Queremos compartir una buena nueva con todos los socios de nuestro amado supermercado. Ayer, 28 de marzo de 2028, uno de nuestros nuevos clientes habituales se convirtió en nuestro socio número mil.</p>
+        <p>Desde la apertura del supermercado DWEC hemos luchado para ofrecer los mejores productos locales y provinciales, principalmente, a precios de todos los gustos y gracias a vuestro apoyo seguimos haciéndolo. Como muestra de nuestra dediación ahora contamos con mil socios que nos permiten conseguir productos a precios más baratos.</p>
+        <p>Dado que este hito está dentro de una campaña especial para captar más socios, recordamos que todos los clientes inscritos durante esta recibirán descuentos en productos de uso diario, consulten con los cajeros para saber más de estos productos.</p>
+        <p>Esperamos que sigan apoyando al supermercado con su patrocinio. Atentamente, la Dirección.</p>
+    </main>
+
+    <footer>
+        <p>Copyright</p>
+        <a href="#">Contacto</a>
+        <a href="#">Dirección</a>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+
+        toggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
